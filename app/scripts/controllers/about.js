@@ -13,5 +13,5 @@ angular.module('quizApp')
       'HTML5 Boilerplate',
       'AngularJS',
       'Karma'
-    ];
+    ]
   });
