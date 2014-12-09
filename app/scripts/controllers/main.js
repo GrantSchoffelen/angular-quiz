@@ -39,6 +39,19 @@ angular.module('quizApp')
 	      'difficulty': 3 
 	    }
 	];
-	$scope.letters = ['A', 'B', 'C', 'D', 'E']
+	$scope.letters = ['A', 'B', 'C', 'D', 'E'];
+	$scope.userInput = [];
+	$scope.oneAnswer = '';
 
+
+	$scope.test = function() {
+		console.log($scope.model.oneAnswer)
+		// if ($scope.userInput)
+		// console.log(option.value)
+		var answer = [];
+		for (var i = 0; i < $scope.quiz.length; i++) {
+			answer.push($scope.quiz[i].answer)
+		};
+	}
+	
   });
